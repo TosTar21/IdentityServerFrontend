@@ -1,16 +1,13 @@
-import './App.css'
-import './index.css'
+// src/App.tsx
+import React from 'react';
+import UsersTable from './components/UsersTable';
 
-function App() {
-
-
+const App: React.FC = () => {
   return (
-    <>
-      <div className="flex justify-center items-center h-screen bg-red-500">
-      <h1 className="text-4xl font-bold text-white">Hello, Tailwind CSS!</h1>
+    <div className="App">
+      <UsersTable />
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
